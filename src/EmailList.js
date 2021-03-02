@@ -1,5 +1,4 @@
 import React from 'react'
-import './EmailList.css'
 import { Checkbox, IconButton } from '@material-ui/core'
 import ArrowDropdownIcon from '@material-ui/icons/ArrowDropDown'
 import RedoIcon from '@material-ui/icons/Redo'
@@ -8,6 +7,13 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import KeyboardHideIcon from '@material-ui/icons/KeyboardHide'
 import SettingsIcon from '@material-ui/icons/Settings'
+import InboxIcon from '@material-ui/icons/Inbox'
+import PeopleIcon from '@material-ui/icons/People'
+import LocalOfferIcon from '@material-ui/icons/LocalOffer'
+
+import './EmailList.css'
+
+import Section from './Section'
 
 function EmailList() {
   return (
@@ -44,7 +50,9 @@ function EmailList() {
       </div>
 
       <div className="emailList_sections">
-        
+        <Section Icon={InboxIcon} title="Primary" color="red" required />
+        <Section Icon={PeopleIcon} title="Social" color="1A73E8" required />
+        <Section Icon={LocalOfferIcon} title="Promotions" color="green" required />
       </div>
     </div>
   )
