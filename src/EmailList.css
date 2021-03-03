@@ -12,3 +12,12 @@
   background-color: white;
   z-index: 3;
 }
+
+.emailList_sections {
+  position: sticky;
+  top: 0;
+  display: flex;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 3;
+}
