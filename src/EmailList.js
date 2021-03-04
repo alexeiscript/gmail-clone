@@ -10,6 +10,7 @@ import SettingsIcon from '@material-ui/icons/Settings'
 import InboxIcon from '@material-ui/icons/Inbox'
 import PeopleIcon from '@material-ui/icons/People'
 import LocalOfferIcon from '@material-ui/icons/LocalOffer'
+import EmailRow from './EmailRow'
 
 import './EmailList.css'
 
@@ -53,6 +54,15 @@ function EmailList() {
         <Section Icon={InboxIcon} title="Primary" color="red" required selected />
         <Section Icon={PeopleIcon} title="Social" color="blue" required />
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" required />
+      </div>
+
+      <div className="emailList_list">
+        <EmailRow 
+          title="Twitch"
+          subject="Hey fellow streamer"
+          description="This is a test description"
+          time="10pm"
+        />
       </div>
     </div>
   )
