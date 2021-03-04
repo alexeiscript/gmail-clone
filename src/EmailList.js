@@ -60,7 +60,7 @@ function EmailList() {
         <EmailRow 
           title="Twitch"
           subject="Hey fellow streamer"
-          description="This is a test description"
+          description="This is a test description wow cant believe it super"
           time="10pm"
         />
       </div>
