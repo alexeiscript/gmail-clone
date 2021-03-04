@@ -6,7 +6,7 @@ import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutline
 
 function EmailRow({ id, title, subject, description, time }) {
   return (
-    <div className="emailRow">
+    <p className="emailRow">
       <div className="emailRow_options">
         <Checkbox />
         <IconButton>
@@ -21,14 +21,14 @@ function EmailRow({ id, title, subject, description, time }) {
       </h3>
       <div className="emailRow_message">
         <h4>
-          {subject}
-          <span className="emailRow_description">{description}</span>
+          {subject}{" "}
+          <span className="emailRow_description">- {description}</span>
         </h4>
       </div>
-      <div className="emailRow_description">
+      <p className="emailRow_time">
         {time}
-      </div>
-    </div>
+      </p>
+    </p>
   )
 }
 
