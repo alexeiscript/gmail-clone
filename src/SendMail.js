@@ -31,7 +31,7 @@ function SendMail() {
           type="text"
           ref={register({ required: true })}
         />
-        {errors.subject && <p className="sendMail_error">To is required</p>}
+        {errors.subject && <p className="sendMail_error">subject is required</p>}
 
         <input 
           placeholder="Message..."
@@ -40,7 +40,7 @@ function SendMail() {
           name="message"
           ref={register({ required: true })}
         />
-        {errors.message && <p className="sendMail_error">To is required</p>}
+        {errors.message && <p className="sendMail_error">message is required</p>}
 
         <div className="sendMail_options">
           <Button 
